@@ -8,12 +8,14 @@ The "https://repo.packagist.org/p2/symfony/error-handler.json" file could not be
 ```
 composer config --global disable-tls true
 composer config --global secure-http false
-composer clear-cache
-composer diagnose
 ```
 Adicionar "secure-http": falso no arquivo composer.json
 ```
 "config": {
     "secure-http": false
 },
+```
+```
+composer clear-cache
+composer diagnose
 ```
